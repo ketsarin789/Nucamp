@@ -28,6 +28,7 @@ import { NavLink } from 'react-router-dom';
         });
     }
     handleLogin(event){
+        
         alert(`Username: ${this.username.value} password: ${this.password.value} Remember: ${this.remember.checked}`);
         this.toggleModal();
         this.preventDefault();
@@ -35,20 +36,20 @@ import { NavLink } from 'react-router-dom';
 
         render() {
             return (
-              <React.Fragment>
-                <Jumbotron fluid>
-                  <div className="container">
-                    <div className="row">
-                      <div className="col">
-                        <h1>NuCamp</h1>
-                        <h2>a better way to camp</h2>
-                      </div>
+                <React.Fragment>
+                    <Jumbotron fluid>
+                    <div className="container">
+                        <div className="row">
+                        <div className="col">
+                            <h1>NuCamp</h1>
+                            <h2>a better way to camp</h2>
+                        </div>
+                        </div>
                     </div>
-                  </div>
-                </Jumbotron>
+                    </Jumbotron>
 
-                <Navbar dark sticky="top" expand="md">
-                  <div className="container">
+                    <Navbar dark sticky="top" expand="md">
+                    <div className="container">
                         <NavbarBrand className="mr-auto" href="/">
                         <img src="/assets/images/logo.png" height="30" width="30" alt="NuCamp Logo" />
                         </NavbarBrand>
